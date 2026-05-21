@@ -1,0 +1,34 @@
+name: syncfusion-blazor-ui-builder
+version: 1.0.0
+description: Generates production-ready enterprise webpages powered by Syncfusion Blazor Components. Orchestrates a structured
+  workflow that handles design thinking, component picking, code generation, and validation
+  with built-in WCAG 2.1 AA accessibility and responsive design. Use when building Blazor UIs,
+  creating web components, designing interfaces, or generating frontend code.
+  
+author: Syncfusion Inc
+keywords:
+  - blazor
+  - ui-components
+  - syncfusion
+  - code-generation
+  - design-system
+  - accessibility
+  - wcag
+  - fluent-2
+  - responsive-design
+
+license: Syncfusion Inc
+
+dependencies:
+  apm:
+    - syncfusion/blazor-ui-components-skills
+    - syncfusion/docx-editor-sdk-skills/skills/syncfusion-blazor-docx-editor
+    - syncfusion/pdf-viewer-sdk-skills/skills/syncfusion-blazor-pdf-viewer
+    - syncfusion/pdf-viewer-sdk-skills/skills/syncfusion-blazor-smart-pdf-viewer
+    - syncfusion/spreadsheet-editor-sdk-skills/skills/syncfusion-blazor-spreadsheet-editor
+    - syncfusion/document-sdk-skills/skills/syncfusion-dotnet-pdf
+  mcp: []
+
+includes: auto
+
+scripts: {}
