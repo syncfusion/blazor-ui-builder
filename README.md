@@ -22,8 +22,9 @@ Before using this skill, ensure you have:
 | Requirement | Description |
 |-------------|-------------|
 | **Blazor Project** | Active Blazor WebAssembly or Blazor Server project (.NET 8+) |
-| **.NET SDK 8.0+** | .NET CLI tools installed |
-| **Node.js 18+** | npm package manager installed |
+| **Microsoft .NET SDK 8.0 or later** | .NET CLI tools installed |
+| **Node.js version 18 or later** | npm package manager installed |
+| **Agent Package Manager (APM)** | Agent Package Manager installed. [Installation Guidelines](https://microsoft.github.io/apm/quickstart/#1-install-apm) |
 | **Syncfusion License** | [Commercial](https://www.syncfusion.com/sales/unlimitedlicense), [Free Community](https://www.syncfusion.com/products/communitylicense), or [Free Trial](https://www.syncfusion.com/account/manage-trials/start-trials) |
 
 ### Quick Setup
@@ -317,7 +318,6 @@ Components/[ComponentName]/
 | Stage | Error | Recovery |
 |-------|-------|----------|
 | Stage 3 | "Component not in Syncfusion" | Agent asks for clarification or suggests alternatives |
-| Stage 3 | "Python script not found" | Verify Python 3.7+ installed, run from correct directory |
 | Stage 4 | "Framework not detected" | Override detected settings in Stage 2 |
 | Stage 5 | "Missing Syncfusion imports" | Read component skill documentation first |
 | Stage 6 | "Validation fails" | Auto-fixes applied; user can override |
