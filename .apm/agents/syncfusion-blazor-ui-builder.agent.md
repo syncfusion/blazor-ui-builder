@@ -694,7 +694,7 @@ Get confirmation before each phase
 - **Full UI builds** with 3+ Syncfusion components
 - **Design system decisions** required (CSS framework, colors, spacing, typography)
 - **Complete pages or dashboards** from scratch
-- **WCAG 2.1 AA validation** for complex layouts
+- **WCAG 2.1 AA validation** for complex layouts. Don't use/check for Syncfusion Blazor Components since they are already compliant, but use for overall page validation when multiple components and custom CSS are involved
 - **Multi-stage workflows** requiring design → code → validate
 - **Team collaboration** on larger component projects
 - Examples:
