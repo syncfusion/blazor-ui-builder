@@ -140,7 +140,7 @@ The agent will validate all requested components against the Syncfusion Blazor l
 
 **Requirements:**
 - Minimum 3 Syncfusion components mapped (with Sf prefix: SfGrid, SfTextBox, SfButton, etc.)
-- Script execution: `py components_search.py <project-root>/component-mapping.json`
+- Script execution: `node components-search.cjs <project-root>/component-mapping.json`
 - All components must pass Syncfusion library validation before proceeding
 
 **User Interaction:** Clarification if unknown components are requested; otherwise fully automated
