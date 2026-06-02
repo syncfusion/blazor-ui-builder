@@ -273,8 +273,9 @@ Every icon from the Stage 3 selection list MUST appear in the generated code:
 - All selected icons MUST be implemented in appropriate UI locations based on their semantic meaning
 
 **Step 1: Attempt to find icon from Component Mapping**
-- **Always run ComponentMapper script first** to get semantic icon mappings (BM25 search against EJ2 icons)
-- **Use icon CSS class if score > 5:** `<span className="e-icons e-mail"></span>`
+- **Always run the ComponentMapper script first** to retrieve semantic icon mappings (BM25 search against EJ2 icons).
+- Refer to the Component skill guidelines for properly adding icons in Syncfusion Blazor components, and avoid adding icons unnecessarily.
+- **If the mapping score is greater than 5**, use the corresponding icon CSS class:`<span className="e-icons e-user"></span>`
 - **Never leave empty space** - either icon or emoji, not blank
 
 **Step 2: If Icon Not Found or Score Too Low**
