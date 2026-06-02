@@ -159,6 +159,7 @@ Confirm: Syncfusion integration:
   - **WASM:** Theme CSS imports in `wwwroot/index.html` before `<div id="app"></div>`
   - **WebApp:** Theme CSS imports in `Components/App.razor` `<head>` section before components render
   - Color coordination strategy
+  - **⛔ PRESERVE EXISTING CSS REFERENCES:** When adding Syncfusion theme CSS, NEVER remove or replace any existing stylesheet links (e.g., `bootstrap.min.css`, `app.css`). Only ADD the Syncfusion theme `<link>` tag alongside them. Removing existing CSS will break the project's base styles and layout.
 
 Confirm: **Important** Load the framework-specific theming implementations guidelines
 
@@ -356,6 +357,28 @@ Test-Path -Path "Components/Shared/[FileName].razor"
 ```
 
 **Theme CSS Verification (Critical for Project Type):**
+
+**⛔ CRITICAL: NEVER REMOVE EXISTING CSS REFERENCES**
+When adding the Syncfusion theme link, you MUST preserve ALL existing stylesheet references in `App.razor` or `index.html`. Only ADD — never replace or remove. Removing references like `bootstrap.min.css`, `app.css` will break the project's base styles and layout.
+
+**✅ Correct — ADD alongside existing links:**
+```razor
+<head>
+    <link rel="stylesheet" href="@Assets["lib/bootstrap/dist/css/bootstrap.min.css"]" />
+    <link rel="stylesheet" href="@Assets["app.css"]" />
+    <link rel="stylesheet" href="@Assets["BlazorWebApp2.styles.css"]" />
+    <!-- ✅ Syncfusion theme ADDED here, existing links preserved above -->
+    <link href="_content/Syncfusion.Blazor.Themes/tailwind3.css" rel="stylesheet" />
+</head>
+```
+**❌ Wrong — removing existing links:**
+```razor
+<head>
+    <!-- ❌ bootstrap.min.css, app.css, styles.css were removed — DO NOT DO THIS -->
+    <link href="_content/Syncfusion.Blazor.Themes/tailwind3.css" rel="stylesheet" />
+</head>
+```
+
 - **WASM:** Confirm `wwwroot/index.html` has Syncfusion theme CSS link in `<head>`
   ```html
   <link href="_content/Syncfusion.Blazor.Themes/tailwind3.css" rel="stylesheet" />

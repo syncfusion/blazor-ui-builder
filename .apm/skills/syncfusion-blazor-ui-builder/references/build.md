@@ -143,7 +143,7 @@ Examples of component-specific issues in Blazor:
 **Blazor-specific diagnostics to verify:**
 - ✓ `.csproj` has Syncfusion NuGet package references with matching versions
 - ✓ `Program.cs` includes `builder.Services.AddSyncfusionBlazor();`
-- ✓ `wwwroot/index.html` has correct CSS link: `<link href="_content/Syncfusion.Blazor/themes/..." rel="stylesheet" />`
+- ✓ `wwwroot/index.html` has correct CSS link: `<link href="_content/Syncfusion.Blazor.Themes/..." rel="stylesheet" />`
 - ✓ `.razor` component has `@using Syncfusion.Blazor.*` directives
 - ✓ Syncfusion components use correct C# naming (SfGrid, SfTextBox, etc.)
 - ✓ Event handlers are `EventCallback<T>` with proper async/await patterns
@@ -159,5 +159,4 @@ Examples of component-specific issues in Blazor:
 → Escalate to user with component skill reference and diagnostic steps
 → Suggest manual fix with Razor code example and explanation
 → Do NOT generate new Blazor code without understanding root cause
-→ Check Syncfusion Blazor documentation: https://www.syncfusion.com/blazor-components/
 
