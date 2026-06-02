@@ -140,6 +140,7 @@ Load: `skills/syncfusion-blazor-ui-builder/references/stage-4-theming-and-design
 - **CSS Import**: `_content/Syncfusion.Blazor.Themes/fluent2.css` (or fluent2-dark.css for dark mode)
 - **Rationale**: Fluent 2 provides modern Microsoft design language, excellent accessibility (WCAG AA), and optimal contrast
 - **User Override**: If user requests alternative theme (Bootstrap5, Material3, Tailwind3), honor their request with confirmation
+- **Use Syncfusion's Tailwind 3** if the theme is tailwind 3. Also don't refer/use 'tailwind.config.js' config. 
 
 **CRITICAL: Determine Project Type (Blazor WASM vs WebApp)**
 Before confirming design system, identify the Blazor project type:
@@ -639,8 +640,10 @@ Auto-advance (no confirmation needed)
 
 **Stage 4 (Theming Gate)**:
 Present design system decisions with Blazor/CSS framework alignment, get explicit user confirmation
-Confirm Syncfusion theme strategy (Bootstrap5, Material3, or Tailwind3)
-Confirm token storage strategy (scoped CSS, global CSS, C# constants, or appsettings.json)
+Don't Override/conflicts with Project's default themes. 
+Confirm Syncfusion theme usage to pick the concern theme reference(Fluent 2, Bootstrap 5, Material 3, or Tailwind 3)
+If no theme mentioned, use Fluent 2 as default.
+
 Only proceed to Stage 5 after user approves all theming choices
 
 **Stages 5-8 (Implementation Gate)**:
